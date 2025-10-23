@@ -285,7 +285,10 @@ parrot-overlays-dtb-$(CONFIG_ARCH_RAVELIN) += $(RAVELIN_BOARDS) $(RAVELIN_BASE_D
 dtb-y += $(parrot-dtb-y)
 
 WAIPIO_BASE_DTB += waipio.dtb waipio-v2.dtb
-WAIPIO_BOARDS += cupid-sm8450-pm8008-overlay.dtbo zeus-sm8450-pm8008-overlay.dtbo
+WAIPIO_BOARDS += \
+		cupid-sm8450-pm8008-overlay.dtbo \
+		zeus-sm8450-pm8008-overlay.dtbo \
+		ingres-sm8450-pm8008-overlay.dtbo
 
 waipio-dtb-$(CONFIG_ARCH_WAIPIO) += \
 	$(call add-overlays, $(WAIPIO_BOARDS),$(WAIPIO_BASE_DTB))
