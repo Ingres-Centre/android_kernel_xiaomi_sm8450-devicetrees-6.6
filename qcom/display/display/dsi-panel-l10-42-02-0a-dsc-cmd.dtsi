@@ -312,8 +312,6 @@
 
 			mi,mdss-dsi-dimmingon-command = [15 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
-			mi,mdss-dsi-dimmingoff-command = [15 00 00 00 00 00 02 53 20];
-			mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-switch-page-command = [
 				/* switch page, last byte is page config */
@@ -387,8 +385,6 @@
 
 			mi,mdss-dsi-dimmingon-command = [15 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
-			mi,mdss-dsi-dimmingoff-command = [15 00 00 00 00 00 02 53 20];
-			mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-on-command = [
 				39 00 00 00 00 00 05 51 0F FF 00 00];
