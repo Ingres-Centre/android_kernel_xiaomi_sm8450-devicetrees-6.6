@@ -295,9 +295,6 @@
 	qcom,mdss-dsi-panel-status-command-state = "dsi_lp_mode";
 	qcom,mdss-dsi-panel-status-offset-command-state = "dsi_lp_mode";
 
-
-	mi,ddic-round-corner-enabled;
-
 	mi,flat-update-flag;
 	mi,flat-need-sync-te;
 
@@ -382,21 +379,6 @@
 				39 00 00 00 AA 00 02 10 00
 			];
 			mi,mdss-dsi-doze-to-off-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-round-corner-on-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round on */
-				39 00 00 00 00 00 03 C0 05 02
-			];
-			mi,mdss-dsi-round-corner-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-round-corner-off-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round off */
-				39 00 00 00 00 00 03 C0 00 02
-			];
-			mi,mdss-dsi-round-corner-off-command-state = "dsi_lp_mode";
 		};
 
 		timing@1{ /* 120 hz */
@@ -542,21 +524,6 @@
 				39 00 00 00 AA 00 02 10 00
 			];
 			mi,mdss-dsi-doze-to-off-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-round-corner-on-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round on */
-				39 00 00 00 00 00 03 C0 05 02
-			];
-			mi,mdss-dsi-round-corner-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-round-corner-off-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round off */
-				39 00 00 00 00 00 03 C0 00 02
-			];
-			mi,mdss-dsi-round-corner-off-command-state = "dsi_lp_mode";
 		};
 
 	};
