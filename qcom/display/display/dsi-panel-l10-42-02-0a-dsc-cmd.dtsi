@@ -301,9 +301,6 @@
 	mi,flat-update-flag;
 	mi,flat-need-sync-te;
 
-	mi,max-brightness-clone = <4095>;
-	mi,mdss-dsi-fac-bl-max-level = <2047>;
-	mi,mdss-fac-brightness-max-level = <2047>;
 	mi,doze-hbm-dbv-level = <252>;
 	mi,doze-lbm-dbv-level = <20>;
 	mi,thermal-dimming-flag;
