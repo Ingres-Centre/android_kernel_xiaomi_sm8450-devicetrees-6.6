@@ -326,42 +326,6 @@
 			mi,mdss-dsi-switch-page-command-update = <0xF0 0 5>;
 			mi,mdss-dsi-switch-page-command-state = "dsi_lp_mode";
 
-			mi,mdss-dsi-flat-mode-read-pre-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 00 00 00 02 6F 3F
-			];
-			mi,mdss-dsi-flat-mode-read-pre-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-on-command = [
-				/* 60 Hz */
-				39 00 00 00 00 00 02 2F 01
-				39 00 00 60 00 00 02 26 04
-				39 00 00 60 00 00 06 F0 55 AA 52 08 08
-				39 00 00 60 00 00 02 6F 07
-				39 00 00 20 00 00 05 B9 00 00 00 00
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-flat-mode-on-command-update = <0xB9 4 4>;
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-off-read-pre-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 00 00 00 02 6F 48
-			];
-			mi,mdss-dsi-flat-mode-off-read-pre-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-off-command = [
-				/* 60 Hz */
-				39 00 00 00 00 00 02 2F 01
-				39 00 00 60 00 00 02 26 01
-				39 00 00 60 00 00 06 F0 55 AA 52 08 08
-				39 00 00 60 00 00 02 6F 07
-				39 00 00 20 00 00 05 B9 00 00 00 00
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-flat-mode-off-command-update = <0xB9 4 4>;
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-hbm-on-command = [
 				39 00 00 00 00 00 05 51 0F FF 00 00];
 			mi,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";
